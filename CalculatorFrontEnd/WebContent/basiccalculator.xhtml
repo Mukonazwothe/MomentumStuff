@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head>
+		<title>Basic Calculation Page</title>
+	</h:head>
+	<h:body>
+		<center>
+		<ui:include src="/menu.xhtml"/>		
+		<h:form>	
+			Value 1  :* <h:inputText id="operand1" value="#{operand1}"/><br/><br/>
+			Operator :* <h:inputText id="operator" value="#{operator}"/> (+,-,*,/)<br/><br/>
+			Value 2  :* <h:inputText id="operand2" value="#{operand2}"/><br/><br/>
+			<h:commandButton value="Calculate" action="myresponse"/><br/><br/>
+			#{login.username}
+		</h:form>
+		</center>
+	</h:body>
+</html>
